@@ -100,12 +100,12 @@ const MultipleIntelligence = () => {
     ]
   return (
     <div className="flex flex-col justify-center items-center bg-white gap-10 p-6">
-      <p className="text-2xl text-black font-bold text-center" data-aos="zoom-in">M.I.I.T SCREENING</p>
+      <p className="text-2xl text-black font-bold text-center" data-aos="zoom-in">M.I.I.T. SCREENING</p>
       <p className="text-2xl text-black text-center" data-aos="zoom-in">1. Nine Types of Multiple Intelligences</p>
       <img src={multiIntelli} alt="multi-intelli-img" className="w-fit h-[300px] sm:h-[450px]" data-aos="zoom-in"></img>
-        <div className="flex justify-center items-baseline gap-6 p-12 w-full flex-wrap">
+        <div className="flex justify-center items-baseline gap-6 p-2 sm:p-12 w-full flex-wrap">
       {intelliTypes.map((type)=>(
-        <div key={type.id} className="flex flex-col justify-center items-center gap-4 w-[360px] text-center" >
+        <div key={type.id} className="flex flex-col justify-center items-center gap-4 w-auto sm:w-[360px] text-center" >
             <p className="text-4xl text-white font-bold rounded-full p-10" style={{backgroundColor:type.color}} data-aos="zoom-in">0{type.id}</p>
             <p className="text-blak text-xl font-semibold text-black text-center" data-aos="zoom-in">{type.title}</p>
             <p className="text-xl text-black text-center" data-aos="zoom-in">{type.desc}</p>

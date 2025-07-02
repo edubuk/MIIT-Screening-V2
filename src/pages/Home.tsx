@@ -100,9 +100,11 @@ const Home = () => {
             <span className="w-4 h-4  rounded-full bg-[#F14419]"></span>
           </div>
         </div>
-         <p className="text-[#03257e] text-4xl lg:text-5xl font-bold text-center lg:text-start w-full ">          
+         {<p className="text-[#03257e] text-4xl lg:text-5xl font-bold text-center lg:text-start w-full hidden sm:block">          
           Discover Your <br></br>
-         Potential with <br></br>MIIT Screening</p>
+         Potential with <br></br>MIIT Screening</p>}
+         <p className="text-[#03257e] text-4xl lg:text-5xl font-extrabold text-center lg:text-start w-full sm:hidden">          
+          Discover Your Potential with MIIT Screening</p>
          <p className="text-yellow-300 text-3xl text-center lg:text-start w-full font-semibold ">Multiple Intelligence, Interests & Talent Assessment</p>
          <p className="text-black text-2xl text-center lg:text-start w-full ">Two-part assessment designed to map your intelligence and passion</p>
         <p className="text-black text-2xl text-center lg:text-start w-full ">Based on Howard Gardner’s Multiple Intelligence Theory</p>
