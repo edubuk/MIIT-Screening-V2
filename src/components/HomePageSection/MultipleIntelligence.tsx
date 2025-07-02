@@ -107,7 +107,7 @@ const MultipleIntelligence = () => {
       {intelliTypes.map((type)=>(
         <div key={type.id} className="flex flex-col justify-center items-center gap-4 w-auto sm:w-[360px] text-center" >
             <p className="text-4xl text-white font-bold rounded-full p-10" style={{backgroundColor:type.color}} data-aos="zoom-in">0{type.id}</p>
-            <p className="text-blak text-xl font-semibold text-black text-center" data-aos="zoom-in">{type.title}</p>
+            <p className="text-blak text-xl font-bold text-black text-center" data-aos="zoom-in">{type.title}</p>
             <p className="text-xl text-black text-center" data-aos="zoom-in">{type.desc}</p>
         </div>))}
          </div>

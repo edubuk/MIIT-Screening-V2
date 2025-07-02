@@ -91,7 +91,7 @@ const Home = () => {
 
   return (
     <div className=" flex flex-col gap-6 font-open overflow-hidden">
-      <div className="grid grid-cols-1 sm:p-4 lg:grid-cols-2">
+      <div className="grid grid-cols-1 sm:p-4 lg:grid-cols-2 place-content-center">
         <div className="flex justify-center items-center flex-col gap-4 p-8" data-aos="fade-right">
           <div className="flex justify-center lg:justify-start items-center w-full gap-4">
           <div className="flex justify-center lg:justify-start items-center gap-3">
@@ -105,6 +105,7 @@ const Home = () => {
          Potential with <br></br>MIIT Screening</p>}
          <p className="text-[#03257e] text-4xl lg:text-5xl font-extrabold text-center lg:text-start w-full sm:hidden">          
           Discover Your Potential with MIIT Screening</p>
+          <img src={hero} className="w-fit h-[250px] sm:hidden" data-aos="zoom-in"></img>
          <p className="text-yellow-300 text-3xl text-center lg:text-start w-full font-semibold ">Multiple Intelligence, Interests & Talent Assessment</p>
          <p className="text-black text-2xl text-center lg:text-start w-full ">Two-part assessment designed to map your intelligence and passion</p>
         <p className="text-black text-2xl text-center lg:text-start w-full ">Based on Howard Gardner’s Multiple Intelligence Theory</p>
@@ -114,7 +115,7 @@ const Home = () => {
             {auth.user?<a href="#register" className="w-[180px] rounded-full text-xl sm:text-2xl bg-[#006666] border-1 border-gray-300 text-white text-center px-1 sm:px-4 py-2 uppercase cursor-pointer hover:bg-white hover:text-[#006666] transition-colors duration-500">Register</a>:<Link to="/sign-up" className="w-[180px] rounded-full text-xl sm:text-2xl bg-[#006666] border-1 border-gray-300 text-white text-center px-1 sm:px-4 py-2 uppercase cursor-pointer hover:bg-white hover:text-[#006666] transition-colors duration-500">Register</Link>}
           </div>
         </div>
-        <img src={hero} className="w-fit h-[90vh] hidden lg:flex" data-aos="zoom-in"></img>
+        <img src={hero} className="w-fit hidden sm:h-[90vh] lg:flex" data-aos="zoom-in"></img>
       </div>
       <Mission />
    
