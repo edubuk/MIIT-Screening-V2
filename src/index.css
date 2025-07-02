@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-scrollbar:3px
+}
+
+a {
+  text-decoration: inherit;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+
+}
+@keyframes slideOpposite {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+
+}
+@keyframes slide-in-right {
+  
+    0% {
+      transform: 'translateX(-100%)';
+      opacity: '0';
+    }
+    100% {
+      transform: 'translateX(0)';
+      opacity: '1';
+    }
+
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-down {
+  animation: fade-in-down 1s ease-in-out;
+}
+
+
+.animate-slide {
+  animation: slide 8s linear infinite;
+}
+.animate-slideOpposite {
+  animation: slideOpposite 10s linear infinite;
+}
+
+.slide-in-right{
+  animation: slide-in-right 2s ease-out forwards;
+}
+
+.zindex{
+  z-index: 1000000;
+}
+
+@keyframes zoomOut {
+            0% {
+              transform: scale(1.4);
+              opacity: 0.4;
+            }
+            50% {
+              transform: scale(1);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(1.4);
+              opacity: 0.4;
+            }
+          }
+
+          .animate-zoomOut {
+            animation: zoomOut 1.5s ease-in-out infinite;
+          }
+
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+.input-style {
+  width: 100%;
+  border-bottom: 2px solid #D1D5DB; /* Tailwind's gray-300 */
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;    /* 8px */
+  padding-bottom: 0.5rem;
+  margin-top: 0.25rem;    /* 4px */
+  color: #006666;
+  outline: none;
+}
+
+.input-style::placeholder {
+  color: #9CA3AF; /* Tailwind's gray-400 */
+}
+
+@media  screen and (max-width: 563px) {
+.xmscreen-hidden{
+  display:none;
+}
+}
+@media  screen and (max-width: 563px) {
+.xmscreen-visible{
+  display:block;
+}
+  
+}
+
