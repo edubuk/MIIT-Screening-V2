@@ -84,6 +84,10 @@ html {
   z-index: 1000000;
 }
 
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
+
 @keyframes zoomOut {
             0% {
               transform: scale(1.4);

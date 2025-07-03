@@ -97,7 +97,7 @@ const Navbar = () => {
         </div>
         {auth.user && (
           <CgProfile
-            className="flex sm:hidden text-yellow-300 w-8 h-8 md:w-10 md:h-10"
+            className="flex sm:hidden text-[#f14419] w-8 h-8 md:w-10 md:h-10"
             onClick={() => setOpenPopup(!openPopup)}
           />
         )}{" "}
@@ -146,12 +146,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a
-            href="https://edubuklms.com"
-            className=" text-[20px] font-bold text-[#006666] cursor-pointer"
-          >
-            Courses
-          </a>
           {!auth.user && (
             <Link
               to="/login"

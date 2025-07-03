@@ -36,36 +36,36 @@ const ScreeningProcess = () => {
       bgColor: "#FFAA04",
     },
   ];
-  const stepsOverview = [
-    {
-      id: 1,
-      image: step1,
-      title: "MIIT Screening",
-      desc: "This includes brief description about each of the nine types of Multiple Intelligences as per the M.I.Theory given Professor Howard Gardner (of Harvard University) as detailed in his book Frames of Mind, 1983.",
-      bgColor: "#03257E",
-    },
-    {
-      id: 2,
-      image: step2,
-      title: "INTELLIGENCE",
-      desc: "This includes your M.I.I.T. Screening Results which depicts your top 3 dominant Intelligence Types",
-      bgColor: "#006666",
-    },
-    {
-      id: 3,
-      image: step3,
-      title: "PERSONALISED",
-      desc: "This includes your Career Mapping Report and will help you to select suitable Career(s) in sync with your M.I.I.T. Screening Results.",
-      bgColor: "#F14419",
-    },
-    {
-      id: 4,
-      image: step4,
-      title: "CAREER",
-      desc: "This includes information about Next Steps and how our platform can help you in a personalized manner to achieve your career path.",
-      bgColor: "#FFAA04",
-    },
-  ];
+  // const stepsOverview = [
+  //   {
+  //     id: 1,
+  //     image: step1,
+  //     title: "MIIT Screening",
+  //     desc: "This includes brief description about each of the nine types of Multiple Intelligences as per the M.I.Theory given Professor Howard Gardner (of Harvard University) as detailed in his book Frames of Mind, 1983.",
+  //     bgColor: "#03257E",
+  //   },
+  //   {
+  //     id: 2,
+  //     image: step2,
+  //     title: "INTELLIGENCE",
+  //     desc: "This includes your M.I.I.T. Screening Results which depicts your top 3 dominant Intelligence Types",
+  //     bgColor: "#006666",
+  //   },
+  //   {
+  //     id: 3,
+  //     image: step3,
+  //     title: "PERSONALISED",
+  //     desc: "This includes your Career Mapping Report and will help you to select suitable Career(s) in sync with your M.I.I.T. Screening Results.",
+  //     bgColor: "#F14419",
+  //   },
+  //   {
+  //     id: 4,
+  //     image: step4,
+  //     title: "CAREER",
+  //     desc: "This includes information about Next Steps and how our platform can help you in a personalized manner to achieve your career path.",
+  //     bgColor: "#FFAA04",
+  //   },
+  // ];
   return (
     <div className="flex flex-col justify-center items-center bg-white gap-10" id="miit-process">
         <p className="text-[#03257e] text-4xl font-bold text-center" data-aos="fade-up">MIIT SCREENING PROCESS</p>
@@ -134,11 +134,12 @@ const ScreeningProcess = () => {
             <div className="flex flex-col justify-center items-center">
               <p className="text-xl text-black font-semibold" data-aos="zoom-in">{step.title1}</p>
               <p className="text-[#000000] uppercase -mt-2" data-aos="zoom-in">{step.title2}</p>
+              {/* <p className="text-[#000000] uppercase -mt-2" data-aos="zoom-in">Logical-Mathematical<br></br>Linguistic<br></br>Interpersonal</p> */}
             </div>
           </div>
         ))}
       </div>
-      <div className="flex flex-col justify-center items-center gap-6 p-6 w-full mt-[100px] sm:mt-0">
+      {/* <div className="flex flex-col justify-center items-center gap-6 p-6 w-full mt-[100px] sm:mt-0">
         {stepsOverview.map((steps)=>(
             <div className="flex justify-start items-center gap-4 w-full">
             <img src={steps.image} alt="icon" className="w-fit h-24" data-aos="fade-right"></img>
@@ -147,10 +148,7 @@ const ScreeningProcess = () => {
                 <p className="text-black text-xl" data-aos="fade-up">{steps.desc}</p>
             </div>
         </div>))}
-      </div>
-      <div className="text-center py-10 px-12 w-full bg-[#03257e] text-xl " data-aos="zoom-in">
-        <p className="text-white">It is a known fact that youngsters choose their career path(s) either by peer pressure or by parents’ wishes and they only consider a few choices like becoming an Engineer, Doctor, MBA, IAS or a CA. They just do not consider knowing about their interests and passion in a formal way, map it with relevant career path options (outside of mainstream ones) and get relevantly skilled. Therefore, they face the issue of Unemployment. Our end to end solution of Edubuk helps these youngsters first to discover their passion, intelligence type, interests, talent (using our 2 step: MIIT Screening process) and then map it with relevant career paths (a buffet of more than 60 career path options for each individual); narrow these career path options to 1-2 options (using our automated 6 metrics counseling tool); get themselves relevantly skilled to accomplish their chosen career goal.</p>
-      </div>
+      </div> */}
     </div>
   );
 };

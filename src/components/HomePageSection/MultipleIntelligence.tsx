@@ -119,7 +119,8 @@ const MultipleIntelligence = () => {
             {
                 personalityTypes.map((type)=>(
                     <div key={type.id} className=" relative flex justify-center items-center gap-4 p-6 border-2 w-[300px] h-auto sm:h-[150px]" style={{borderColor:type.color}}>
-                        <p className="absolute top-[-20px] left-[-20px] text-black rounded-full border-2 px-4 py-2 font-bold bg-white" style={{borderColor:type.color}} data-aos="zoom-in">{type.id}</p>
+                        {/* <p className="absolute top-[-20px] left-[-20px] text-black rounded-full border-2 px-4 py-2 font-bold bg-white" style={{borderColor:type.color}} data-aos="zoom-in">{type.id}</p> */}
+                        <p className="absolute top-[-20px] left-[-20px] text-black rounded-full border-2 px-4 py-2 font-bold bg-white" style={{borderColor:type.color}} data-aos="zoom-in">{type.id}. {type.title}</p>
                         <p className="text-black" data-aos="zoom-in">{type.desc}</p>
                     </div>
                 ))

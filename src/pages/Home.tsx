@@ -90,7 +90,7 @@ const Home = () => {
   // }, []);
 
   return (
-    <div className=" flex flex-col gap-6 font-open overflow-hidden">
+    <div className=" flex flex-col gap-6 font-open">
       <div className="grid grid-cols-1 sm:p-4 lg:grid-cols-2 place-content-center">
         <div className="flex justify-center items-center flex-col gap-4 p-8" data-aos="fade-right">
           <div className="flex justify-center lg:justify-start items-center w-full gap-4">
@@ -106,9 +106,9 @@ const Home = () => {
          <p className="text-[#03257e] text-4xl lg:text-5xl font-extrabold text-center lg:text-start w-full sm:hidden">          
           Discover Your Potential with MIIT Screening</p>
           <img src={hero} className="w-fit h-[250px] sm:hidden" data-aos="zoom-in"></img>
-         <p className="text-yellow-300 text-3xl text-center lg:text-start w-full font-semibold ">Multiple Intelligence, Interests & Talent Assessment</p>
+         <p className="text-[#f14419] text-3xl text-center lg:text-start w-full font-semibold ">Multiple Intelligence, Interests & Talent Assessment</p>
          <p className="text-black text-2xl text-center lg:text-start w-full ">Two-part assessment designed to map your intelligence and passion</p>
-        <p className="text-black text-2xl text-center lg:text-start w-full ">Based on Howard Gardner’s Multiple Intelligence Theory</p>
+        <p className="text-black text-2xl text-center lg:text-start w-full ">Based on Howard Gardner’s Multiple Intelligence Theory and Holland’s Theory of Interest</p>
           <p className="text-black text-2xl text-center lg:text-start w-full ">Personalized, career-aligned report generation</p>
           <div className="flex justify-center lg:justify-start items-center gap-2 sm:gap-8 w-full">
             <a href="#miit-process" className="w-[180px] rounded-full text-xl sm:text-2xl bg-[#03257e] border-1 border-gray-300 text-white text-center px-2 sm:px-4 py-2 uppercase cursor-pointer hover:bg-white hover:text-[#03257e] transition-colors duration-500">Know More</a>
