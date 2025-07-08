@@ -624,6 +624,7 @@ const Home = () => {
                   <p className="text-[#03257e] font-bold">1. India</p>
                   <p className="text-[#006666] font-bold">2. UAE</p>
                   <p className="text-[#f14419] font-bold">3. Singapore</p>
+                  <p className="text-[#ffaa04] font-bold">4. USA</p>
                 </div>
               </div>
               <div>
@@ -631,6 +632,7 @@ const Home = () => {
                   <p className="font-bold text-[#03257e]">INR 499</p>
                   <p className="font-bold text-[#006666]">AED 50</p>
                   <p className="font-bold text-[#f14419]">SGD 50</p>
+                  <p className="font-bold text-[#ffaa04]">USD 30</p>
                 </div>
               </div>
             </div>
